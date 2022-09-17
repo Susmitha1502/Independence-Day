@@ -1,0 +1,362 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: linear-gradient(to bottom right, orange,whitesmoke,green);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.flowers img{
+    width: 50px;
+    animation: flowers 7s linear infinite;
+  }
+  .flowers {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    top: 0;
+  }
+  @keyframes flowers{
+    0%{
+      transform: translateY(0);
+      opacity: 1;
+    }
+    25%{ 
+        opacity: 3;
+      }
+    50%{
+      opacity: 3;
+    }
+    70%{
+      opacity: 7;
+    }
+    100%{
+      transform: translateY(80vh);
+      opacity: 0;
+    }
+  }
+.navbar{
+    margin-top: -1.5rem;
+    list-style: none;
+    padding: 12px;
+}
+.navbar li a{
+    color: blue;
+    text-transform: capitalize;
+    text-decoration: dashed;
+    font-size: 1.4rem;
+    padding: 1rem;
+    display: block;
+    border-bottom: 0.5px solid rgba(249, 211, 66, 0.3);
+    opacity: 0.8;
+    letter-spacing: 1.5px;
+    transition: var(--transition);
+}
+.navbar li a:hover{
+    padding-left: 12px;
+}
+@media(max-width: 400px){
+    .sidenav{
+        width: 100vw;
+    }
+}
+.heading{
+    font-family: 'Lucida Sans';
+    font-weight: 900;
+}
+.heading h1{
+    text-align: left;
+    font-size: 2.5rem;
+    color: blue;
+    margin-top: 5rem;
+}
+.heading marquee{
+    font-size: 2.5rem;
+    font-weight: 600;
+    animation-name: scroller ;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes scroller{
+    0% {
+        color: rgb(252, 97, 7);
+    }
+    50% {
+        color: whitesmoke;
+    } 
+    100% {
+        color: green;
+    }
+}
+.heading p{
+    text-indent: 15rem;
+}
+.heading .wish{
+    margin-bottom: 10rem;
+}
+.heading .wish h1{
+    color: blue;
+    text-align: left;
+    font-family: cursive;
+    line-height: 10rem;
+    margin-left: 2rem;
+    font-size: 5rem;
+    animation-name: wish;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    margin-top: -2rem;
+}
+@keyframes wish{
+    0%  {color: rgb(206, 5, 5);}
+    5%  {color: orangered ;}
+    10% {color: orange;}
+    15% {color: rgb(255, 217, 4);}
+    20% {color: rgb(208, 255, 0);}
+    25% {color: rgb(133, 238, 14);}
+    30% {color: rgb(19, 230, 19);}
+    35% {color: rgb(11, 212, 71);}
+    40% {color: rgb(0, 128, 85);}
+    45% {color: rgb(0, 128, 128);}
+    50% {color: rgb(0, 87, 128);}
+    55% {color: rgb(0, 81, 255);}
+    60% {color: blue;}
+    65% {color: rgb(119, 0, 255);}
+    70% {color: rgb(174, 43, 226);}
+    75% {color: violet;}
+    80% {color: rgb(240, 28, 187);}
+    85% {color: rgb(240, 24, 60);}
+    90% {color: rgb(252, 31, 31);}
+    100%{color: aliceblue;}
+}
+.heading .wish .pic{
+    width: 30rem;
+    margin-left: 45rem;
+    margin-top: -32rem;
+    height: 20rem;
+    border: .2rem solid black;
+    border-radius: .5rem;
+    object-position: center;
+    padding: .1rem;
+}
+.heading .wish .pics{
+    margin-top: 10rem;
+}
+.heading .wish .pics .left{
+    margin-left: 6rem;
+}
+.heading .wish .pics .left li{
+    margin-bottom: 1.5rem;
+}
+.heading .wish .pics .right{
+    margin-left: 40rem;
+    margin-top: -51.5rem;
+}
+.heading .wish .pics .right img{
+    width: 23rem;
+    height: 15rem;
+}
+.heading .wish .pics .right li{
+    margin-bottom: 1.5rem;
+}
+.heading .content h2{
+    text-indent: 5rem;
+    margin-top: -2rem;
+    margin-left: 4rem;
+}
+.heading .content p span{ 
+    color: rgb(240, 23, 240);
+    font-size: 1.5rem;
+    margin-left: 3rem;
+}
+.heading .content h1{
+    margin-top: 2rem;
+    margin-left: 15rem;
+}
+.heading .content h3{
+    margin-left: 3rem;
+}
+.heading .content h3 span{ 
+    color: rgb(125, 15, 235);
+    font-size: 1.3rem;
+}
+.heading .info h1{
+    color: blue;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 8rem;
+    margin-bottom: 5rem;
+}
+.heading .info p{
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: .2rem;
+    color: rgb(24, 205, 218);
+}
+.heading .info h2{
+    color: rgb(127, 4, 250);
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    background-color: yellowgreen  ;
+    width: fit-content;
+    height: fit-content;
+    padding: .7rem;
+    border-radius: 75% ;
+    margin-right: 2rem;
+}
+.heading .info h3{
+    margin-left: 10rem;
+    width: fit-content;
+    line-height: 2rem;
+    padding: .5rem;
+    margin-top: -4.7rem;
+    background-color: rgb(161, 161, 250);
+    border-radius: .7rem;
+    border: .15rem dashed black ;
+}
+.heading .info h3 span{
+    font-size: 2rem;
+    font-weight: 800;
+    animation-name: font;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes font{
+    0%  {color: rgb(206, 5, 5);}
+    5%  {color: orangered ;}
+    10% {color: orange;}
+    15% {color: rgb(255, 217, 4);}
+    20% {color: rgb(208, 255, 0);}
+    25% {color: rgb(133, 238, 14);}
+    30% {color: rgb(19, 230, 19);}
+    35% {color: rgb(11, 212, 71);}
+    40% {color: rgb(0, 128, 85);}
+    45% {color: rgb(0, 128, 128);}
+    50% {color: rgb(0, 87, 128);}
+    55% {color: rgb(0, 81, 255);}
+    60% {color: blue;}
+    65% {color: rgb(119, 0, 255);}
+    70% {color: rgb(174, 43, 226);}
+    75% {color: violet;}
+    80% {color: rgb(240, 28, 187);}
+    85% {color: rgb(240, 24, 60);}
+    90% {color: rgb(252, 31, 31);}
+    100%{color: aliceblue;}
+}
+.heading .inform h1{
+    color: blue;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 8rem;
+    margin-bottom: 5rem;
+}
+.heading .inform p{
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: .2rem;
+    color: rgb(24, 205, 218);
+}
+.heading .inform h2{
+    color: rgb(166, 243, 12);
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    background-color: rgb(136, 136, 250);
+    width: fit-content;
+    height: fit-content;
+    padding: .7rem;
+    border-radius: 75% ;
+    margin-right: 2rem;
+}
+.heading .inform h3{
+    margin-left: 10rem;
+    width: fit-content;
+    line-height: 2rem;
+    padding: .5rem;
+    margin-top: -4.7rem;
+    background-color: rgb(199, 226, 145)  ;
+    border-radius: .7rem;
+    border: .15rem dashed black ;
+}
+.heading .inform h3 span{
+    color: rgb(253, 119, 9);
+}
+.heading .languages{
+    margin-left: 7rem;
+    margin-top: 3rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    animation-name: hlt;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+.heading .languages .flag{
+    margin-left: 40rem;
+    margin-top: -35rem;
+    width: 30rem;
+    height: 55rem;
+}
+.heading .languages .flag img{
+    border: .2rem solid black;
+    border-radius: .5rem;
+    padding: .1rem;
+}
+@keyframes hlt {
+    0%  {color: rgb(206, 5, 5);}
+    5%  {color: orangered ;}
+    10% {color: orange;}
+    15% {color: rgb(255, 217, 4);}
+    20% {color: rgb(208, 255, 0);}
+    25% {color: rgb(133, 238, 14);}
+    30% {color: rgb(19, 230, 19);}
+    35% {color: rgb(11, 212, 71);}
+    40% {color: rgb(0, 128, 85);}
+    45% {color: rgb(0, 128, 128);}
+    50% {color: rgb(0, 87, 128);}
+    55% {color: rgb(0, 81, 255);}
+    60% {color: blue;}
+    65% {color: rgb(119, 0, 255);}
+    70% {color: rgb(174, 43, 226);}
+    75% {color: violet;}
+    80% {color: rgb(240, 28, 187);}
+    85% {color: rgb(240, 24, 60);}
+    90% {color: rgb(252, 31, 31);}
+    100%{color: aliceblue;}
+}
+.heading .languages h1{
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 600;
+    margin-left: -5rem;
+    animation-name: line;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    margin-top: -15rem;
+}
+@keyframes line{
+    0% {
+        color: rgb(252, 97, 7);
+        opacity: 0;
+    }
+    50% {
+        color: whitesmoke;
+        opacity: 5;
+    } 
+    100% {
+        color: green;
+        opacity: 10;
+    }
+}
+.credit{
+    text-align: center;
+    word-spacing: .1rem;
+    bottom: 0%;
+    position: relative;
+}
+.credit span{
+    word-spacing: .1rem;
+}
